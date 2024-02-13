@@ -1,22 +1,22 @@
 # string
 x = "Hello World" 
-x = str("Hello World")
+x = str("Hello World") #Setting the Specific Data Type
 
 #integer
 x=20
-x = int(20)
+x = int(20)  #Setting the Specific Data Type
 
 # float
 x=20.5
-x = float(20.5)
+x = float(20.5)   #Setting the Specific Data Type
 
-#complex
+#complex - consists of two values, the first one is the real part of the complex number, and the second one is the imaginary part of the complex number.
 x=1j
-x = complex(1j)
+x = complex(1j)   #Setting the Specific Data Type
 
-# list
+# list -  an ordered data structure with elements separated by a comma and enclosed within square brackets.
 x= ["luffy","zoro","sanji"]
-x = list(("apple", "banana", "cherry"))
+x = list(("apple", "banana", "cherry"))   #Setting the Specific Data Type
 
 # tuple
 x= ("luffy","zoro","sanji")
