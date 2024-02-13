@@ -1,0 +1,317 @@
+-------------DAY01
+
+1_first.py ->
+
+print("hello World")
+name = "Vaibhav"
+print(f"Hello {name}")
+print("hello "+ input("What is your name?\n-->")+"!");
+# this is comment
+
+
+2_variable.py -> 
+
+# x = 5
+# y = "John"
+# print(x,y)
+
+# x = str(3)    
+# y = int(3)   
+# z = float(3) 
+
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+
+
+3_variable2.py ->
+
+# x, y, z = "Orange", "Banana", "Cherry"
+# print(x,y,z)
+
+# x = y = z = "Orange"
+# print(x,y,z)
+
+# fruits = ["apple", "banana", "cherry"]
+# x, y, z = fruits
+# print(x,y,z)
+
+x = "Python "
+y = "is "
+z = "awesome"
+print(x + y + z)
+
+
+4_global_variable.py ->
+
+# global variable
+x = "awesome" 
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+
+print("You are " + x)
+
+
+5_data_types.py ->
+
+# string
+x = "Hello World" 
+x = str("Hello World")
+
+#integer
+x=20
+x = int(20)
+
+# float
+x=20.5
+x = float(20.5)
+
+#complex
+x=1j
+x = complex(1j)
+
+# list
+x= ["luffy","zoro","sanji"]
+x = list(("apple", "banana", "cherry"))
+
+# tuple
+x= ("luffy","zoro","sanji")
+
+
+# dictionary
+x= {"luffy":1,"zoro":2,"sanji":3}
+x = tuple(("apple", "banana", "cherry"))
+
+# set
+x= {"luffy,","zoro","sanji"}
+x = set(("apple", "banana", "cherry"))
+
+# range
+x= range(6)
+x = range(6)
+
+# frozenset
+x= frozenset({"luffy","zoro","sanji"})
+x = frozenset(("apple", "banana", "cherry"))
+
+# boolean
+x= True
+x = bool(5)
+
+# bytes
+x= b"hello"
+x = bytes(5)
+
+# bytearray
+x=bytearray(5)
+x = bytearray(5)
+
+# memoryview
+x = memoryview(bytes(5))
+x = memoryview(bytes(5))
+
+# nonetype
+x= None
+
+
+6_casting.py ->
+
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
+
+
+7_string1.py ->
+
+# Assign String to a Variable
+a = "Jai shree ram!"
+print(a)
+
+
+# Multiline Strings
+# a = """Lorem ipsum dolor sit amet,
+# consectetur adipiscing elit,
+# sed do eiusmod tempor incididunt
+# ut labore et dolore magna aliqua."""
+# print(a)
+
+# Strings are Arrays
+print(a[1])    
+
+# Looping Through a String
+for x in "jai shreee ram!":
+  print(x)
+  
+# String Length
+print(len(a))
+
+# Check String
+print("ram" in a)
+
+# Check if NOT
+print("krish" not in a)
+
+
+8_string2.py ->
+
+# Slicing Strings
+txt = "12345678910"
+print(str(len(txt))+"\n12345678910")
+print(txt[3:9])
+print(txt[-5:-2])
+
+# Modify Strings
+a = "  Jai Shree Ram!  "
+print("\n"+a.upper()) #Lower Case
+print("\n"+a.lower()) #Upper Case
+print("\n"+a.strip()) #Remove Whitespace
+
+# Replace String
+print(a.replace("4", "8"))
+
+# Split String
+print(a.split(","))
+
+# String Concatenation
+a = "jai"
+b = "shree"
+c = "ram!"
+d = a +" "+ b + c
+print(d)
+
+# String Format
+age = 36
+txt = "My name is Jhon snow, I am " + age
+print(txt)
+
+quantity = 5
+itemno = 567
+price = 80
+myorder = "I want {} pieces of item no. {} for {} rupees."
+print(myorder.format(quantity, itemno, price))
+
+# Escape Character
+txt = "We are the so-called \"Nagpurians\" from the Maharashtra, India."
+print(txt)
+
+
+9_booleans.py ->
+
+# Boolean Values - represent one of two values: True or False.
+
+print(10 > 9)  #True
+print(10 == 9) #False
+print(10 < 9)  #False
+
+print(bool("Hello"))  #True
+print(bool(15))       #True
+print(bool(0))        #False
+print(bool(1))        #True
+
+# many values that evaluate to False, except empty values, such as (), [], {}, "", the number 0, and the value None. And of course the value False evaluates to False.
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
+
+
+# Functions can Return a Boolean
+
+# def myFunction() :
+#   return True  
+
+# print(myFunction())
+
+
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+
+
+10_operators.py -> 
+
+print(10 + 5)
+         ^
+         |
+      operator
+
+# Arithmetic operators 
++   | Addition        | x + y	
+-   | Subtraction     | x - y	
+*   | Multiplication  | x * y	
+/   | Division        | x / y	
+%   | Modulus         | x % y	
+**  | Exponentiation  | x ** y	
+//  | Floor division  | x // y
+
+# Assignment operators
+Operator     |	Example	     |  Same As
+=	     |  x = 5	     |  x = 5	
++=	     |  x += 3	     |  x = x + 3	
+-=	     |  x -= 3	     |  x = x - 3	
+*=	     |  x *= 3	     |  x = x * 3	
+/=	     |  x /= 3	     |  x = x / 3	
+%=	     |  x %= 3	     |  x = x % 3	
+//=	     |  x //= 3	     |  x = x // 3	
+**=	     |  x **= 3	     |  x = x ** 3	
+&=	     |  x &= 3	     |  x = x & 3	
+|=	     |  x |= 3	     |  x = x | 3	
+^=	     |  x ^= 3	     |  x = x ^ 3	
+>>=	     |  x >>= 3	     |  x = x >> 3	
+<<=	     |  x <<= 3	     |  x = x << 3	
+
+# Comparison operators
+Operator |  Name                      |  Example
+==       |  Equal                     |  x == y
+!=       |  Not equal                 |  x != y
+>        |  Greater than              |  x > y	
+<        |  Less than                 |  x < y
+>=       |  Greater than or equal to  |  x >= y	
+<=       |  Less than or equal to     |  x <= y
+
+# Logical operators
+and    | Returns True if both statements are true                 |  x < 5 and  x < 10	
+or     | Returns True if one of the statements is true            |  x < 5 or x < 4	
+not    | Reverse the result, returns False if the result is true  |  not(x < 5 and x < 10)
+
+# Identity operators
+is      |  Returns True if both variables are the same object      | x is y	
+is not  |  Returns True if both variables are not the same object  | x is not y
+
+# Membership operators
+in      |  Returns True if a sequence with the specified value is present in the object	   | x in y	
+not in  |  Returns True if a sequence with the specified value is not present in the object | x not in y
+
+# Bitwise operators
+&   |  AND                   |  Sets each bit to 1 if both bits are 1  --> x & y	
+|   |  OR                    |  Sets each bit to 1 if one of two bits is 1  --> x | y	
+^   |  XOR                   |  Sets each bit to 1 if only one of two bits is 1 --> x ^ y	
+~   |  NOT                   |  Inverts all the bits  --> ~x	
+<<  |  Zero fill left shift  |  Shift left by pushing zeros in from the right and let the leftmost bits fall off  --> x << 2	
+>>  |  Signed right shift    |  Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off  --> x >> 2
+
+
+
+
+
+
